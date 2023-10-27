@@ -12,11 +12,24 @@
     <script>
         let operando1;
         let operando2;
-        operando1 = prompt("digite o primeiro número:")
-        operando2 = prompt("digite o segundo número:") 
-        document.write(`adição: ${operando1} + ${operando2} = ${operando1 + operando2}`)
-        document.prompt("adição: ")
-
+        
+        
+        
+        operando1 = parseFloat( prompt("digite o primeiro número:") );
+        operando2 = parseFloat( prompt("digite o segundo número:" ) );
+        
+        let soma = operando1 + operando2;
+        
+        document.write(`adição: ${operando1} + ${operando2} = ${soma} <br>`);
+        document.write(`subtração: ${operando1} - ${operando2} = ${operando1 - operando2} <br>`);
+        document.write(`multiplicação: ${operando1} * ${operando2} = ${operando1 * operando2} <br>`);
+        document.write(`divisão: ${operando1} / ${operando2} = ${operando1 / operando2} <br>`);
+        document.write(`resto da divisão: ${operando1} % ${operando2} = ${operando1 % operando2} <br>`);
+        document.write(`exponenciação: ${operando1} elevado a ${operando2} = ${operando1 ** operando2} <br>`);
+        document.write(`unario de incremento: ${operando1} apos incrementaçaõ = ${++operando1} <br>`);
+        document.write(`unario de decremento: ${operando1} apos decrementar = ${--operando1}<br>`);
+        
+        
             
     </script>
 </body>
